@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 4: Global State Sharing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header with greeting -->
+    <header class="app-header">
+      <h1>My Notes</h1>
+      <div id="headerGreeting" class="greeting hidden">
+        Welcome, <span id="headerUsername">Guest</span>!
+      </div>
+    </header>
+    
+    <div class="main-content">
+      <!-- Sidebar with profile info -->
+      <aside class="sidebar">
+        <div id="profileSection" class="profile-section hidden">
+          <h3>Profile</h3>
+          <p>Logged in as: <span id="profileUsername">Guest</span></p>
+          <button id="logoutBtn">Logout</button>
+        </div>
+      </aside>
+      
+      <!-- Main area with login form -->
+      <main class="content">
+        <div id="loginForm" class="login-form">
+          <h2>Login</h2>
+          <div class="form-group">
+            <label for="usernameInput">Username:</label>
+            <input type="text" id="usernameInput" placeholder="Enter your username">
+          </div>
+          <button id="loginBtn">Login</button>
+        </div>
+        
+        <div id="welcomeMessage" class="welcome-message hidden">
+          <h2>Web Systems and Technologies</h2>
+          <p>View notes: This content is only visible to authenticated users.</p>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
